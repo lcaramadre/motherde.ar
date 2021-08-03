@@ -1,0 +1,51 @@
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="contacto.css?v=1.4">
+</head>
+<div class="contain">
+  <div class="wrapper">
+    <div class="contacts">
+      <h3>Contácteme</h3>
+      <br>
+      <ul>
+        <li>luis@motherde.ar</li>
+        <li>lcaramadre@gmail.com</li>
+      </ul>
+      <br>
+    </div>
+
+    <div class="form">
+      <h3>Complete el formulario para poder contactarme con Ud.</h3>
+      <form action="contacto.php" method="POST">
+        <p class="full-width">
+          <label for="nombres">Nombre</label>
+          <input type="text" name="nombres" id="nombres" required>
+        </p>
+        <p class="full-width">
+          <label for="mail">Mail</label>
+          <input type="email" name="mail" id="mail" required>
+        </p>
+        <p class="full-width">
+          <label for="asunto">Asunto</label>
+          <input type="asunto" name="asunto" id="asunto" required>
+        </p>
+        <!-- <p>
+          <label for="">Email Address</label>
+          <input type="text">
+        </p>
+        <p>
+          <label for="">Topic</label>
+          <input type="text">
+        </p> -->
+        <p class="full-width">
+          <label for="mensaje">Mensaje</label>
+          <textarea name="mensaje" id="mensaje" cols="30" rows="7" required></textarea>
+        </p>
+        <p class="full-width">
+          <button name="contacto" value='1'>Enviar</button>
+        </p>
+      </form>
+    </div>
+  </div>
+</div>
+
