@@ -198,7 +198,9 @@ a:focus{
   min-height: 280px;
   height: 100%;
   align-items: center;
-  justify-content: last baseline ;
+  justify-content: last baseline;
+  perspective: 1000px;
+  transition: all 1s linear;
 }
 .foto{
   display: flex;
@@ -207,10 +209,10 @@ a:focus{
   justify-content: center;
   grid-column: span 1;
   grid-row: span 1;
-  backface-visibility: hidden;
+  /* backface-visibility: hidden; */
   transform-style: preserve-3d;
   transition: all 0.5s linear;
-  animation: girar 10s;
+  animation: girar 6s;
 }
 .cont-img{
   position: absolute;
@@ -232,7 +234,7 @@ a:focus{
   transform-style: preserve-3d;
   transition: all 0.5s linear;
   background-color: white;
-  animation: rotar2 10s;
+  animation: rotar2 6s;
   opacity: 0;
 }
 .persona:hover .foto{
